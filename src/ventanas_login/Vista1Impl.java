@@ -86,7 +86,7 @@ public class Vista1Impl extends JFrame implements Vista1 {
 				if (pwd.equals(textField.getText()) && (pwd.length()>=1)) {
 
 					setVisible(false);
-					//miVista3.setVisible(true);
+					miVista3.setVisible(true);
 					System.out.println("Ahora se abriria la ventana 3");
 				}
 

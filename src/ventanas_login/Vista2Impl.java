@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -85,7 +86,19 @@ public class Vista2Impl extends JFrame implements Vista2{
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
-		JButton btnAlta = new JButton("ALTA");
+		JButton btnAlta = new JButton("REGISTRAR");
+		btnAlta.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				String pwd = new String(passwordField.getPassword());
+				if (pwd.equals(textField_1.getText()) && (pwd.length()>=1)) {
+
+					setVisible(false);
+					miVista3.setVisible(true);
+					System.out.println("Ahora se abriria la ventana 3");
+				
+				}	
+			}
+		});
 		btnAlta.setBounds(310, 203, 89, 23);
 		contentPane.add(btnAlta);
 		
@@ -97,7 +110,7 @@ public class Vista2Impl extends JFrame implements Vista2{
 		passwordField_1.setBounds(113, 172, 286, 20);
 		contentPane.add(passwordField_1);
 		
-		JButton btnVolver = new JButton("VOLVER");
+		JButton btnVolver = new JButton("CANCELAR");
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
