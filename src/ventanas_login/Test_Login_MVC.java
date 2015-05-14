@@ -13,6 +13,7 @@ public class Test_Login_MVC {
 		
 		MiVista1.setMiVista3(MiVista3);
 		MiVista2.setMiVista3(MiVista3);
+		//
 
 		MiVista1.setVisible(true);
 	}
