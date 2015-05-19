@@ -16,7 +16,7 @@ public class Test_Login_MVC {
 		MiVista1.setVisible(true);
 		MiVista1.setVisible(false);
 		
-		//Prueba de commit hhh
+		//Prueba de commit hhhg
 	
 	}
 
